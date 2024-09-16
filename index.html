@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu de Contraste</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game" class="game container">
+      <div id="text-container">
+        <p id="text">Devinez le ratio de contraste</p>
+      </div>
+
+      <input
+        type="number"
+        id="ratioInput"
+        step="0.01"
+        min="1"
+        max="21"
+        placeholder="ratio"
+      />
+      <div class="buttons">
+        <button id="checkButton">Vérifier</button>
+        <!-- <button id="revealButton">Voir le ratio</button> -->
+        <button id="nextButton">Suivant</button>
+      </div>
+
+      <div class="feedback-container">
+        <p id="feedback"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
